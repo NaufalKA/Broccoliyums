@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naufal KA's Domain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Portofolio</a>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Project</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Whello, guejh Naufal</h1>
+                <p>Yo, name’s Naufal Krisna Adyatma — but just call me Naufal. 14 y.o. menace cooked straight outta Madrasah Mu’allimin Muhammadiyah Yogyakarta. Built diff, locked in, no NPC energy 🤫🧏‍♂️. Touching code, chasing dreams, and cooking projects while everyone else is scrolling. Stay mad, I’m just leveling up. 🔥</p>
+               <a href="#" class="btn" id="contactBtn">My Contacts</a>
+
+<!-- Modal -->
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Anything you want:</h2>
+    <a href="https://instagram.com/naflkrsna" target="_blank">📸 Instagram</a>
+    <br>
+    <a href="mailto:naufalkrisnaadyatma@gmail.com">✉️ Email</a>
+  </div>
+</div>
+
+            </div>
+            <div class="hero-image">
+                <img src="c:\Users\ASUS\OneDrive\Pictures\Saved Pictures\IMG-20241117-WA0004.jpg"alt="Gambar Profil"height="300px" width="300px">
+            </div>
+        </div>
+    </header>
+<script>
+  const modal = document.getElementById("contactModal");
+  const btn = document.getElementById("contactBtn");
+  const span = document.getElementsByClassName("close")[0];
+
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
+
+
